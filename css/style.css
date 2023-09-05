@@ -17,6 +17,13 @@ h1 {
     margin: 0;
     padding: 0;
 }
+a {
+    color:white
+}
+#CV_picture {
+    position: absolute;
+    left: 100px;
+}
 p {
     color: white;
     font-family: 'Roboto', sans-serif;
@@ -35,13 +42,17 @@ div {
     padding:3px; 
 
 }
+#topbar2{
+    background-color: orange;
+    padding:3px; 
+}
 #midbar{
     margin-top: 0px;
     background-color: orange;
     padding:3px; 
 }
 #midbar2{
-    margin-top: 365px;
+    margin-top: 0px;
     background-color: orange;
     padding:3px; 
 
@@ -52,20 +63,20 @@ div {
 }
 #bottombar2{
     background-color: rgb(163, 163, 163);
-    padding-bottom: 564px;
+    padding-bottom: 506px;
 }
 #block1 {
-    background-color:  rgb(163, 163, 163);;
+    background-color:  rgb(163, 163, 163);
     font-size: 20;
     font-weight: 100;
     color: black;
     float: right;
-    padding-right: 800px;
+    padding-right: 820px;
     padding-top: 15;
 
 }
 #block2 {
-    background-color:  rgb(163, 163, 163);;
+    background-color:  rgb(163, 163, 163);
     font-size: 20;
     font-weight: 100;
     color: black;
@@ -74,7 +85,7 @@ div {
     padding-top: 15;
 }
 #block3 {
-    background-color:  rgb(163, 163, 163);;
+    background-color:  rgb(163, 163, 163);
     font-size: 20;
     font-weight: 100;
     color: black;
@@ -83,13 +94,27 @@ div {
     padding-top: 15;
 }
 #block4 {
-    background-color:  rgb(163, 163, 163);;
+    background-color:  rgb(163, 163, 163);
     font-size: 20;
     font-weight: 100;
     color: black;
     float: right;
-    padding-right: 50%;
+    padding-right: 960px;
     padding-top: 15;
+}
+#block5 {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color:  rgb(163, 163, 163);
+    font-size: 20;
+    font-weight: 100;
+    color: black;
+    padding-right: 30px;
+    padding-left: 30;
+    padding-top: 15;
+    padding-bottom: 15;
+
 }
 .text-container {
     position: absolute;
@@ -107,7 +132,7 @@ div {
     padding-left: 10px;
     padding-right: 10px;
     left: 32.5%;
-    top: 20;
+    top: 40px;
     background-color: rgb(41, 41, 41, 0.8);
     font-size: 24;
 }
@@ -117,7 +142,7 @@ div {
     padding-bottom: 20px;
     padding-right: 10px;
     left: 49.8%;
-    top: 20;
+    top: 40;
     background-color: rgb(41, 41, 41, 0.8);
     font-size: 24;
 }
