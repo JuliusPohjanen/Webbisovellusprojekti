@@ -66,26 +66,27 @@ div {
     padding-bottom: 506px;
 }
 #block1 {
-    background-color:  rgb(163, 163, 163);
+    background-color: rgb(41, 41, 41, 0.8);
     font-size: 20;
     font-weight: 100;
     color: black;
     float: right;
-    padding-right: 820px;
     padding-top: 15;
 
 }
 #block2 {
-    background-color:  rgb(163, 163, 163);
+    background-color: rgb(41, 41, 41, 0.8);
     font-size: 20;
     font-weight: 100;
     color: black;
     float: right;
-    padding-right: 60px;
+    padding-right: 50px;
+    padding-left: 50;
+    padding-bottom: 15;
     padding-top: 15;
 }
 #block3 {
-    background-color:  rgb(163, 163, 163);
+    background-color: rgb(41, 41, 41, 0.8);
     font-size: 20;
     font-weight: 100;
     color: black;
@@ -119,9 +120,9 @@ div {
 .text-container {
     position: absolute;
     color: rgb(255, 255, 255);
-    padding-left: 6px;
-    padding-right: 6px;
-    left: 870px;
+    padding-left: 3px;
+    padding-right: 3px;
+    left: 50%;
     top: 20;
     background-color: rgb(41, 41, 41, 0.8);
 }
@@ -144,5 +145,14 @@ div {
     left: 49.8%;
     top: 40;
     background-color: rgb(41, 41, 41, 0.8);
+    font-size: 24;
+}
+.link-container{
+    position: absolute;
+    margin-top: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 6px;
+    left: 33%;
     font-size: 24;
 }
