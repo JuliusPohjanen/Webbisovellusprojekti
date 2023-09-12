@@ -107,7 +107,7 @@ div {
     position: absolute;
     top: 20px;
     right: 20px;
-    background-color:  rgb(163, 163, 163);
+    background-color: rgb(41, 41, 41, 0.8);
     font-size: 20;
     font-weight: 100;
     color: black;
@@ -154,5 +154,14 @@ div {
     padding-bottom: 0px;
     padding-right: 6px;
     left: 33%;
+    font-size: 24;
+}
+.link-container2{
+    position: absolute;
+    margin-top: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 6px;
+    left: 45%;
     font-size: 24;
 }
