@@ -59,11 +59,11 @@ div {
 }
 #bottombar{
     background-color: rgb(163, 163, 163);
-    padding-bottom: 35;
+    padding-bottom: 1.85%;
 }
 #bottombar2{
     background-color: rgb(163, 163, 163);
-    padding-bottom: 506px;
+    padding-bottom: 26.35%;
 }
 #block1 {
     background-color: rgb(41, 41, 41, 0.8);
@@ -132,8 +132,8 @@ div {
     padding-bottom: 20px;
     padding-left: 10px;
     padding-right: 10px;
-    left: 32.5%;
-    top: 40px;
+    left: 33%;
+    top: 5%;
     background-color: rgb(41, 41, 41, 0.8);
     font-size: 24;
 }
@@ -164,4 +164,13 @@ div {
     padding-right: 6px;
     left: 45%;
     font-size: 24;
+}
+th{
+    text-align: left;
+    font-size: 24;
+    color:white;
+}
+td{
+    font-size: 24;
+    color:white;
 }
