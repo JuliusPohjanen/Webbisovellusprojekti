@@ -10,7 +10,25 @@
     
     <div> 
         <img src="assets/pictures/WinterNature.jpg" alt="WinterNature" style="height: 45%; width: 100%; object-fit: cover; object-position: 100% 80%">
-
+        <div class="text-container">
+            <div id="blockmenu"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Valikko</span></div>
+            <div id="blockname"><h2>Yhteystiedot</h2></div>
+          </div>
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="/CV.html">CV</a>
+            <a href="/portfolio.html" >Portfolio</a>
+            <a href="index.html"> Etusivu</a>
+          </div>
+          <script>
+            function openNav() {
+              document.getElementById("mySidenav").style.width = "250px";
+            }
+            
+            function closeNav() {
+              document.getElementById("mySidenav").style.width = "0";
+            }
+            </script>
     <div class="thing-container">
     <h3>Julius Pohjanen</h3>
     <table>
@@ -28,7 +46,7 @@
         </tr>
         <tr>
             <th>Postinumero:</th>
-            <td>90530</td>
+            <td>90570</td>
         </tr>
         <tr>
             <th>Postitoimipaikka:</th>
@@ -36,7 +54,12 @@
         </tr>
         <tr>
             <th>Lähiosoite:</th>
-            <td>Tarmontie 45 A 2</td>
+            <td>Tuulikintie 6D 225</td>
+        </tr>
+        <tr>
+            <th>Github käyttäjä:</th>
+            <td><a href="https://github.com/JuliusPohjanen" target="_blank">JuliusPohjanen</a></td>
+        </tr>
     </table>
     </div>
     <div id="midbar2"></div>

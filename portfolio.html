@@ -7,16 +7,34 @@
     <div id="topbar"></div>
 
     <div>
-        <img src="assets/pictures/WinterNature.jpg" alt="WinterNature" style="height: 40%; width: 100%; object-fit: cover; object-position: 100% 80%">
-        <div class="text-container2">
-        <h3>Portfolio</h3>
-      </div>
+        <img src="assets/pictures/WinterNature.jpg" alt="WinterNature" style="height: 45%; width: 100%; object-fit: cover; object-position: 100% 80%">
+        <div class="text-container">
+          <div id="blockmenu"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Valikko</span></div>
+        <div id="blockname"><h2>Portfolio</h2></div>
+        </div>
       
+    
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="/index.html">Etusivu</a>
+        <a href="/portfolio.html">CV</a>
+        <a href="/Yhteystiedot.html">Yhteystiedot</a>
+        
+      </div>
+      <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
       <div id="midbar"></div>
   
     <div id="bottombar3">
       <div class="text-container3">
-        <div id="block4"><a id="linkback" href="/index.html">Takaisin</a><p>Projektilista</p></div>   
+        <div id="block4"><p>Projektilista</p></div>   
       </div>
       <div id="midbar"></div>
 
@@ -27,11 +45,23 @@
         <p>Projektin tarkoituksena oli luoda toimiva mini-sudoku peli.</p>
         <p>----</p>
         <p>Osani projektissa oli tehdä pistetaulukon toiminnallisuutta muiden ominaisuuksiin myös.</p>
-        <p>Olin laitevastaava projektissa. Kävin hankkimassa projektiin tarvittavat komponentit, kuten</p>
-        <p>LCD-näytön.</p>
-        <a href="">Mini-sudokun kuvagalleria</a>
+        <p>Olin laitevastaava projektissa. Hankin projektiin tarvittavat komponentit, kuten LCD-näytön</p>
+        <p>ja napit.</p>
+        <a href="/MiniSudokuGallery">Mini-sudokun kuvagalleria</a>
+        <P>----</P>
+        <a href="https://github.com/JuliusPohjanen/MiniSudoku-Finished" target="_blank">Projektin Github sivu</a>
         </div>
-      
 
+      <div class="project-container2">
+        <h1>Pankkiautomaatti simulaattori</h1>
+        <p>Pankkiautomaatti simulaattori on tietokoneella tomiva ohjelma, jonka kautta pystyy</p>
+        <p>simuloimaan pankkiautomaatin toimintaa, jonka tarkoitus on olla hyvin lähellä oikean</p>
+        <p>pankkiautomaatin toimintaa.</p>
+        <p>----</p>
+        <p>Osani projektissa oli tehdä pankkiautomaatin toiminnallisuutta, kuten rahan nosto, saldo,</p>
+        <p>tarkistus, sekä pankkikortin lukeminen.</p>
+        <p></p>
+      </div> 
+        
     </div>
 </body>

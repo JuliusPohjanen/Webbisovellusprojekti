@@ -6,13 +6,29 @@
 </head>
 <body>
     <div id="topbar2"></div>
-
+    <div class="text-container">
+        <div id="blockmenu"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Valikko</span></div>
+      <div id="blockname"><h2>CV</h2></div>
     <div id="CV_picture">
-        <img src="assets/pictures/CV_JULIUS_POHJANEN.jpg" alt="CV_JULIUS_POHJANEN" >
+        <img src="assets/pictures/resume-1.jpg" alt="resume-1">
     </div>
-
-    <div>
-        <div id="block5"><a href="/index.html">Takaisin</a></div>
-    </div>
+    
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="/index.html">Etusivu</a>
+        <a href="/portfolio.html">Portfolio</a>
+        <a href="/Yhteystiedot.html">Yhteystiedot</a>
+      </div>
+      
+      <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+    
     
 </body>
