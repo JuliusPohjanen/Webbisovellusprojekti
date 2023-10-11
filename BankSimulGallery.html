@@ -1,0 +1,165 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <title>Pankkiautomaatti simulaattori kuvagalleria</title>
+</head>
+
+<body>
+  <div id="topbar"></div>
+
+  <div class="text-container">
+    <div id="blockmenu2"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; MENU</span></div>
+    <div id="blockname">
+      <h2>BANK SIMULATOR IMAGE GALLERY</h2>
+    </div>
+  </div>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html">Etusivu</a>
+    <a href="/CV.html">CV</a>
+    <a href="/portfolio.html">Portfolio</a>
+    <a href="/Yhteystiedot.html">Contact Info</a>
+    <a href="/Aboutme.html">About Me</a>
+  </div>
+
+  <div id="img1">
+    <img class="myImg" src="assets/pictures/banksimul1.jpg" alt="Banksimul1" style="width: 500px; height: 380px;">
+    <div class="myModal modal">
+      <span class="close">&times;</span>
+      <button class="prev" onclick="navigateImages(-1)">&#10094;</button>
+      <img class="modal-content" src="">
+      <button class="next" onclick="navigateImages(1)">&#10095;</button>
+      <div class="caption"></div>
+    </div>
+  </div>
+
+  <div id="img2">
+    <img class="myImg" src="assets/pictures/banksimul2.jpg" alt="Banksimul2" style="width: 500px; height: 380px;">
+    <div class="myModal modal">
+      <span class="close">&times;</span>
+      <button class="prev" onclick="navigateImages(-1)">&#10094;</button>
+      <img class="modal-content" src="">
+      <button class="next" onclick="navigateImages(1)">&#10095;</button>
+      <div class="caption"></div>
+    </div>
+  </div>
+
+  <div id="img3">
+    <img class="myImg" src="assets/pictures/banksimul3.jpg" alt="Banksimul3" style="width: 500px; height: 380px;">
+    <div class="myModal modal">
+      <span class="close">&times;</span>
+      <button class="prev" onclick="navigateImages(-1)">&#10094;</button>
+      <img class="modal-content" src="">
+      <button class="next" onclick="navigateImages(1)">&#10095;</button>
+      <div class="caption"></div>
+    </div>
+  </div>
+
+  <div id="img4">
+    <img class="myImg" src="assets/pictures/banksimul4.jpg" alt="Banksimul4" style="width: 500px; height: 380px;">
+    <div class="myModal modal">
+      <span class="close">&times;</span>
+      <button class="prev" onclick="navigateImages(-1)">&#10094;</button>
+      <img class="modal-content" src="">
+      <button class="next" onclick="navigateImages(1)">&#10095;</button>
+      <div class="caption"></div>
+    </div>
+  </div>
+
+  <div id="img5">
+    <img class="myImg" src="assets/pictures/banksimul5.jpg" alt="Banksimul5" style="width: 500px; height: 380px;">
+    <div class="myModal modal">
+      <span class="close">&times;</span>
+      <button class="prev" onclick="navigateImages(-1)">&#10094;</button>
+      <img class="modal-content" src="">
+      <button class="next" onclick="navigateImages(1)">&#10095;</button>
+      <div class="caption"></div>
+    </div>
+  </div>
+
+  <div id="img6">
+    <img class="myImg" src="assets/pictures/banksimul6.jpg" alt="Banksimul6" style="width: 500px; height: 380px;">
+    <div class="myModal modal">
+      <span class="close">&times;</span>
+      <button class="prev" onclick="navigateImages(-1)">&#10094;</button>
+      <img class="modal-content" src="">
+      <button class="next" onclick="navigateImages(1)">&#10095;</button>
+      <div class="caption"></div>
+    </div>
+  </div>
+
+
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+
+    var images = document.querySelectorAll(".myImg");
+    var currentIndex = 0;
+
+    function navigateImages(offset) {
+      currentIndex += offset;
+
+      if (currentIndex < 0) {
+        currentIndex = images.length - 1;
+      } else if (currentIndex >= images.length) {
+        currentIndex = 0;
+      }
+
+      showImage(currentIndex);
+    }
+
+    function showImage(index) {
+      var modal = document.querySelector(".myModal");
+      var modalImg = modal.querySelector(".modal-content");
+      var captionText = modal.querySelector(".caption");
+
+      modalImg.src = images[index].src;
+      captionText.innerHTML = images[index].alt;
+    }
+
+    function openModal() {
+      var modal = document.querySelector(".myModal");
+      modal.style.display = "block";
+      showImage(currentIndex);
+    }
+
+    function closeModal() {
+      var modal = document.querySelector(".myModal");
+      modal.style.display = "none";
+    }
+
+    images.forEach(function (image, index) {
+      image.addEventListener("click", function () {
+        currentIndex = index;
+        openModal();
+      });
+    });
+
+    var closeButtons = document.querySelectorAll(".close");
+
+    closeButtons.forEach(function (closeButton) {
+      closeButton.addEventListener("click", function () {
+        closeModal();
+      });
+    });
+
+    document.onkeydown = function (event) {
+      event = event || window.event;
+      if (event.keyCode == 27) {
+        closeModal();
+      } else if (event.keyCode == 37) {
+        navigateImages(-1);
+      } else if (event.keyCode == 39) {
+        navigateImages(1);
+      }
+    };
+  </script>
+</body>

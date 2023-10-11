@@ -1,5 +1,4 @@
 body {
-    background-color: color;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -9,6 +8,36 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    background-color: rgb(41, 41, 41, 0.8);
+}
+#Front_page{
+    
+    background-image: url("/assets/pictures/WinterNature.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+}
+#oamkimg{
+    position: absolute;
+    top:85%;
+    margin-left: 0%;
+    z-index: 3;
+}
+
+#cv{
+    background-color: white;
+    font-size: 20;
+    font-weight: 100;
+    color: black;
+   
+}
+#portfolio {
+    background-color: rgb(41, 41, 41, 0.8);
+    font-size: 20;
+    font-weight: 100;
+    color: black;
+    
 }
 h1 {
     color: white;
@@ -24,11 +53,12 @@ h2 {
 a {
     color: white;
 }
+
 #CV_picture {
     position: absolute;
+    margin-top: 0px;
     margin-left: 0%;
-    margin-top: 28%;
-    z-index: 1;
+    z-index: -1;
 }
 p {
     color: white;
@@ -45,18 +75,19 @@ div {
 
 #topbar{
     background-color: orange;
-    padding:3px; 
+    padding-top:3px; 
 
 }
 #topbar2{
     background-color: orange;
-    padding:3px; 
+    padding-bottom: 3px;
 }
 #midbar{
     margin-top: 0px;
     background-color: orange;
-    padding:3px; 
+    padding-top:3px; 
 }
+
 #midbar2{
     margin-top: 0px;
     background-color: orange;
@@ -64,16 +95,11 @@ div {
 
 }
 #bottombar{
-    background-color: rgb(163, 163, 163);
     padding-bottom: 1.85%;
 }
-#bottombar2{
-    background-color: rgb(163, 163, 163);
-    padding-bottom: 26.35%;
-}
+
 #bottombar3{
-    margin-top: 0;;
-    background-color: rgb(163, 163, 163);
+    margin-top: 0px;
     padding-bottom: 100%;
 }
 
@@ -91,16 +117,37 @@ div {
 #blockname{
     float: right;
     padding-right: 20px;
+    z-index: 3;
+}
+#blockname2{
+    float:right;
+    padding-right: 20px;
+    z-index: 3;
+    margin-top: 0px;
 }
 #blockmenu{
     float: left;
     margin-top: 13;
     padding-left: 20px;
-    padding-right: 60px;
-    padding-bottom: 13px;
+    padding-right: 320px;
+    z-index: 3;
+}
+#blockmenu2{
+    float: left;
+    margin-top: 13;
+    padding-left: 20px;
+    padding-right: 220px;
+    z-index: 3;
+}
+#blockmenu3{
+    float: left;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 220px;
+    z-index: 3;
 }
 #block4 {
-    font-size: 2+0;
+    font-size: 20;
     font-weight: 100;
 }
 #block5 {
@@ -129,7 +176,7 @@ div {
 
 .text-container {
     position: absolute;
-    top: 6px;
+    top: 3px;
     color: rgb(255, 255, 255);
     background-color: rgb(41, 41, 41, 0.8);
     padding-right: 10px;
@@ -145,6 +192,7 @@ div {
     font-size: 20;
 }
 .text-container3 {
+    position: relative;
     color: rgb(255, 255, 255);
     padding-top: 5px;
     padding-bottom: 5px;
@@ -152,40 +200,59 @@ div {
     padding-right: 50px;
     background-color: rgb(41, 41, 41, 0.8);
     font-size: 20;
+    top: 14%;
 }
-
-.project-container{
+.text-container4{
     position: absolute;
+    top: 3px;
+    color: rgb(255, 255, 255);
+    padding-right: 10px;
+}
+.project-container{
+    position: relative;
     font-size: 20;
     margin-top: 2%;
     color: rgb(255, 255, 255);
     padding-left: 50px;
     padding-right: 50px;
     background-color: rgb(41, 41, 41, 0.8);
-    left: 23%;
     padding-bottom: 10px;
+    border: 3px solid orange;
+    
 }
 .project-container2{
-    position: absolute;
+    position:relative;
     font-size: 20;
-    margin-top: 27%;
+    margin-top: 2%;
     color: rgb(255, 255, 255);
     padding-left: 50px;
     padding-right: 50px;
     background-color: rgb(41, 41, 41, 0.8);
-    left: 23%;
     padding-bottom: 10px;
+    border: 3px solid orange;
 }
 .thing-container {
-    position: absolute;
+    position: relative;
+    height: 52.8%;
     color: rgb(255, 255, 255);
     padding-bottom: 20px;
-    padding-left: 10px;
+    padding-left: 40px;
     padding-right: 10px;
-    left: 33%;
-    top: 5%;
+    margin-top: 0%;
     background-color: rgb(41, 41, 41, 0.8);
     font-size: 24;
+    border: 3px solid orange;
+}
+.thing-container2 {
+    position: relative;
+    color: rgb(255, 255, 255);
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 10px;
+    margin-top: 0%;
+    background-color: rgb(41, 41, 41, 0.8);
+    font-size: 24;
+    border: 3px solid orange;
 }
 .contact-container{
     position: absolute;
@@ -199,8 +266,9 @@ div {
 }
 .link-container{
     position: absolute;
-    margin-top: 10px;
-    left: 43%;
+    top: 20%;
+    left: 44%;
+    border: 3px solid orange;
 }
 .link-container2{
     position: absolute;
@@ -217,6 +285,7 @@ th{
     color:white;
 }
 td{
+    padding-left: 100px;
     font-size: 24;
     color:white;
 }
@@ -259,7 +328,7 @@ td{
     .sidenav a {font-size: 18px;}
   }
   #mySidenav {
-    z-index: 2; /* Increase the z-index value */
+    z-index: 2; 
     position: fixed;
     top: 0;
     left: 0;
@@ -270,3 +339,157 @@ td{
     transition: 0.5s;
     padding-top: 60px;
 }
+#img1  {
+    border: 3px solid orange;
+    position: absolute;
+    top:110;
+    left: 4.5%;
+}
+#img2  {
+    border: 3px solid orange;
+    position: absolute;
+    top: 110px;
+    margin-left: 37%;
+}
+#img3  {
+    border: 3px solid orange;
+    position: absolute;
+    top: 110px;
+    margin-left: 69.5%;
+}
+#img4  {
+    border: 3px solid orange;
+    position: absolute;
+    top: 540px;
+    left: 4.5%;
+}
+#img5  {
+    border: 3px solid orange;
+    position: absolute;
+    top: 540px;
+    margin-left: 37%;
+}
+#img6  {
+    border: 3px solid orange;
+    position: absolute;
+    top: 540px;
+    margin-left: 69.5%;
+}
+#myImg {
+    border-radius: 5px;
+    border: 3px solid orange;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+.caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    transition: 0.6s ease;
+    border: none;
+    background: none;
+    outline: none;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: orange;
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }
+  .container {
+    position: relative;
+    margin-top:100px;
+  }

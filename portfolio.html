@@ -1,24 +1,25 @@
 <html lang="en">
   <head>
-    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">    <title>Home</title>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Portfolio</title>   
     <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
-<body>
+<body id="portfolio">
     <div id="topbar"></div>
 
     <div>
-        <img src="assets/pictures/WinterNature.jpg" alt="WinterNature" style="height: 45%; width: 100%; object-fit: cover; object-position: 100% 80%">
+       <img src="assets/pictures/WinterNature.jpg" alt="WinterNature" style="height: 45%; width: 100%; object-fit: cover; object-position: 100% 80%">
         <div class="text-container">
-          <div id="blockmenu"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Valikko</span></div>
-        <div id="blockname"><h2>Portfolio</h2></div>
+          <div id="blockmenu3"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span></div>
+        <div id="blockname2"><h2>Portfolio</h2></div>
         </div>
-      
     
       <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="/index.html">Etusivu</a>
-        <a href="/portfolio.html">CV</a>
-        <a href="/Yhteystiedot.html">Yhteystiedot</a>
+        <a href="/index.html">Front page</a>
+        <a href="/CV.html">CV</a>
+        <a href="/Contact_info.html">Contact info</a>
+        <a href="/Aboutme.html">About me</a>
         
       </div>
       <script>
@@ -30,37 +31,42 @@
           document.getElementById("mySidenav").style.width = "0";
         }
         </script>
-      <div id="midbar"></div>
   
-    <div id="bottombar3">
-      <div class="text-container3">
-        <div id="block4"><p>Projektilista</p></div>   
-      </div>
-      <div id="midbar"></div>
+  <div id="midbar"></div>
+  <div class="text-container3">
+    <div id="block4"><p>Projects list</p></div>   
+  </div>
 
+    <div id="midbar"></div>
+    <div id="bottombar3">
+      
+      
       <div class="project-container">
-        <h1>Mini-sudoku</h1>
-        <p>Mini-sudoku on pienennetty versio täysikokoisesta 9x9 sudokusta.</p>
-        <p>Mini-sudokussa on 4x4 ruudukko, jossa on 4x4 ruutua.</p>
-        <p>Projektin tarkoituksena oli luoda toimiva mini-sudoku peli.</p>
+        <h1>Mini-sudoku project</h1>
+        <p>Mini-sudoku is a smaller version of the full-size 9x9 sudoku.</p>
+        <p>Mini sudoku has a 4x4 grid with 4x4 squares.</p>
+        <p>The purpose of the project was to create a functional mini-sudoku game.</p>
         <p>----</p>
-        <p>Osani projektissa oli tehdä pistetaulukon toiminnallisuutta muiden ominaisuuksiin myös.</p>
-        <p>Olin laitevastaava projektissa. Hankin projektiin tarvittavat komponentit, kuten LCD-näytön</p>
-        <p>ja napit.</p>
-        <a href="/MiniSudokuGallery">Mini-sudokun kuvagalleria</a>
+        <p>My part in the project was to make the functionality of the score table for other features as well.</p>
+        <p>I was the equipment manager in the project. I acquired the necessary components for the project, such as the LCD screen</p>
+        <p>and the buttons.</p>
+        <a href="/MiniSudokuGallery.html">Mini-sudoku image gallery</a>
         <P>----</P>
-        <a href="https://github.com/JuliusPohjanen/MiniSudoku-Finished" target="_blank">Projektin Github sivu</a>
+        <a href="https://github.com/JuliusPohjanen/MiniSudoku-Finished" target="_blank">Project's GitHub site</a>
         </div>
 
       <div class="project-container2">
-        <h1>Pankkiautomaatti simulaattori</h1>
-        <p>Pankkiautomaatti simulaattori on tietokoneella tomiva ohjelma, jonka kautta pystyy</p>
-        <p>simuloimaan pankkiautomaatin toimintaa, jonka tarkoitus on olla hyvin lähellä oikean</p>
-        <p>pankkiautomaatin toimintaa.</p>
+        <h1>Banksimul project</h1>
+        <p>The ATM simulator is a computer-based program through which you can</p>
+        <p>to simulate the operation of an ATM, which is intended to be very close to the real ATM operation.</p>
         <p>----</p>
         <p>Osani projektissa oli tehdä pankkiautomaatin toiminnallisuutta, kuten rahan nosto, saldo,</p>
-        <p>tarkistus, sekä pankkikortin lukeminen.</p>
-        <p></p>
+        <p>My part in the project was to make the functionality of the ATM, such as withdrawing money, checking the balance, and reading the bank card.</p>
+        <p>I did most of the backend myself.</p>
+        <p>The project was challenging, but very nice to do.</p>
+        <a href="/BankSimulGallery.html">Banksimul image gallery</a>
+        <p>----</p>
+        <a href="https://github.com/banksimul-2023-22spo/group_2" target="_blank">Project's GitHub site</a>
       </div> 
         
     </div>
