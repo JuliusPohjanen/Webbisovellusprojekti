@@ -8,59 +8,82 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background-color: rgb(41, 41, 41, 0.8);
+    background-color: black
 }
-#Front_page{
-    
-    background-image: url("/assets/pictures/WinterNature.jpg");
+
+#Front_page {
+    z-index: 1;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    
 }
-#oamkimg{
+#current-date{
+    font-size: 20;
+    font-weight: 400;
+
+}
+#oamkimg {
     position: absolute;
-    top:85%;
+    top: 85%;
     margin-left: 0%;
+    z-index: 1;
+}
+
+#portfolioimg {
+    position: absolute;
+    margin-top: 0;
     z-index: 3;
 }
 
-#cv{
+#cv {
     background-color: white;
     font-size: 20;
-    font-weight: 100;
     color: black;
-   
+    margin-left: 0px;
 }
+
+#CV_picture {
+    position: absolute;
+    top: 0;
+    margin-left: 0%;
+    z-index: -1;
+    height: 2300px;
+
+}
+
 #portfolio {
     background-color: rgb(41, 41, 41, 0.8);
     font-size: 20;
     font-weight: 100;
     color: black;
-    
 }
+
 h1 {
     color: white;
     font-family: 'Roboto', sans-serif;
-    font-size: 50;;    
-    margin: 0;
+    font-size: 44;
+    margin-left: 0;
     padding: 0;
 }
+
 h2 {
     color: white;
     font-family: 'Roboto', sans-serif;
 }
+
 a {
     color: white;
 }
 
-#CV_picture {
-    position: absolute;
-    margin-top: 0px;
-    margin-left: 0%;
-    z-index: -1;
-}
 p {
+    color: gray;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+li{
     color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 24;
@@ -73,83 +96,228 @@ div {
     font-weight: 400;
 }
 
-#topbar{
+#topbar {
     background-color: orange;
-    padding-top:3px; 
+    padding-top: 3px;
 
 }
-#topbar2{
+
+#topbar2 {
     background-color: orange;
     padding-bottom: 3px;
 }
-#midbar{
+
+#midbar {
     margin-top: 0px;
     background-color: orange;
-    padding-top:3px; 
+    padding-top: 3px;
 }
 
-#midbar2{
+#midbar2 {
     margin-top: 0px;
     background-color: orange;
-    padding:3px; 
+    padding: 3px;
 
 }
-#bottombar{
+
+#bottombar {
     padding-bottom: 1.85%;
 }
 
-#bottombar3{
+#bottombar3 {
     margin-top: 0px;
     padding-bottom: 100%;
 }
 
-#block2 {
+
+#blockname {
+    float: right;
     background-color: rgb(41, 41, 41, 0.8);
+    z-index: 3;
+}
+
+#blockmenu {
+    z-index: 3;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 25;
+    padding-right: 25px;
+}
+
+#blockmenu2 {
+    background-color: rgb(41, 41, 41, 0.8);
+    z-index: 3;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 25;
+
+}
+
+#block2 {
     font-size: 20;
-    font-weight: 100;
     color: black;
-    float: right;
-    padding-right: 50px;
-    padding-left: 50;
-    padding-bottom: 15;
-    padding-top: 15;
 }
-#blockname{
-    float: right;
-    padding-right: 20px;
-    z-index: 3;
+
+/* General styles for the top navigation bar */
+.FP-top-nav {
+    background-color: #111; /* Dark background */
+    overflow: hidden;
+    display: flex; /* Horizontal layout */
+    justify-content: space-between; /* Space links evenly */
+    align-items: center; /* Align items vertically */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    padding: 15px 30px; /* Spacing around items */
+    border-radius: 0 0 20px 20px; /* Rounded bottom corners */
+    max-width: 80%; /* Limit the width */
+    margin: 0 auto; /* Center the bar horizontally */
+    position: relative; /* Relative positioning */
+    z-index: 1000; /* Ensure it's above other elements */
 }
-#blockname2{
-    float:right;
-    padding-right: 20px;
-    z-index: 3;
-    margin-top: 0px;
+
+/* Navigation links */
+.FP-top-nav a {
+    color: #ccc; /* Light text color */
+    text-decoration: none; /* No underline */
+    font-size: 16px; /* Text size */
+    padding: px 0px; /* Padding for button-like appearance */
+    border-radius: 5px; /* Rounded corners */
+    margin: 0 15px; /* Horizontal spacing */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Smooth hover effects */
 }
-#blockmenu{
-    float: left;
-    margin-top: 13;
-    padding-left: 20px;
-    padding-right: 320px;
-    z-index: 3;
+
+.FP-top-nav a:hover {
+    color: #3F8E00; /* Lighter text */
+    transform: scale(1.15); /* Slight zoom on hover */
 }
-#blockmenu2{
-    float: left;
-    margin-top: 13;
-    padding-left: 20px;
-    padding-right: 220px;
-    z-index: 3;
+
+/* Social links */
+.social-links {
+    display: flex; /* Horizontal layout */
+    justify-content: center; /* Center the icons */
+    align-items: center; /* Align icons vertically */
+    flex-wrap: wrap; /* Allow wrapping if needed */
 }
-#blockmenu3{
-    float: left;
-    margin-top: 20px;
-    padding-left: 20px;
-    padding-right: 220px;
-    z-index: 3;
+
+.social-links a {
+    display: inline-block; /* Ensure clickable area includes the icon */
 }
+
+.social-icon {
+    width: 24px; /* Icon size */
+    height: 24px;
+    transition: transform 0.3s ease, filter 0.3s ease; /* Hover effects */
+}
+
+.social-links a:hover .social-icon {
+    transform: scale(1.2); /* Slight zoom on hover */
+    filter: brightness(1.2); /* Brighten on hover */
+}
+
+/* Frontpage: Image and text container */
+.FP-Name-container {
+    display: flex; /* Enable flexbox */
+    align-items: center; /* Align vertically */
+    justify-content: space-between; /* Add spacing */
+    max-width: 70%; /* Limit width */
+    margin: 0 auto; /* Center horizontally */
+    padding: 150px; /* Spacing around content */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+/* Text block */
+.FP-Name-container .text-block {
+    flex: 1; /* Take up available space */
+    color: white; /* Ensure visibility on dark background */
+    text-align: left; /* Align text to the left */
+}
+
+/* Image container */
+.FP-Image-container {
+    flex-shrink: 0; /* Prevent shrinking */
+    text-align: center; /* Center image */
+    margin-top: 20px; /* Add spacing on larger screens */
+}
+
+.FP-Image-container img {
+    width: 350px; /* Image size */
+    height: 350px;
+    border-radius: 50%; /* Round image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+/* Responsive: Adjustments for small screens */
+@media (max-width: 850px) {
+    .FP-Name-container {
+        flex-direction: column; /* Stack text and image */
+        padding: 50px 20px; /* Adjust spacing */
+    }
+
+    .FP-Image-container {
+        order: -1; /* Move image above text */
+        margin-bottom: 20px; /* Space below image */
+    }
+
+    .FP-Image-container img {
+        width: 220px; /* Smaller size for smaller screens */
+        height: 220px;
+    }
+
+    .FP-Name-container .text-block {
+        text-align: center; /* Center text */
+    }
+}
+
+/* Reset order for larger screens */
+@media (min-width: 851px) {
+    .FP-Image-container {
+        order: 1; /* Reset order on larger screens */
+    }
+}
+
+/* Keep top navigation layout the same between 600px to 1100px */
+@media (min-width: 600px) and (max-width: 1195px) {
+    .FP-top-nav {
+        flex-direction: column; /* Keep navigation items in a row */
+        max-width: 80%; /* Keep max width consistent */
+        justify-content: space-between; /* Keep links evenly spaced */
+    }
+
+    .FP-top-nav a {
+        font-size: 18px; /* Keep font size consistent */
+        margin: 10px; /* Keep spacing consistent */
+    }
+
+    .social-links {
+        margin-top: 0; /* No extra space above the social links */
+        justify-content: flex-start; /* Align social links to the left */
+    }
+}
+
+/* Adjustments for very small screens (600px and below) */
+@media (max-width: 600px) {
+    .FP-top-nav {
+        flex-direction: column; /* Stack navigation vertically */
+        padding: 20px; /* Add spacing */
+        max-width: 85%; /* Increase width */
+    }
+
+    .FP-top-nav a {
+        font-size: 20px; /* Smaller text size */
+    }
+
+    .social-icon {
+        width: 24px; /* Smaller icons */
+        height: 24px;
+    }
+}
+
+
 #block4 {
     font-size: 20;
-    font-weight: 100;
+    color: black;
 }
+
 #block5 {
     position: absolute;
     top: 20px;
@@ -163,7 +331,8 @@ div {
     padding-top: 15;
     padding-bottom: 15;
 }
-#linkback{
+
+#linkback {
     position: absolute;
     right: 20px;
     margin-top: 0;
@@ -176,21 +345,16 @@ div {
 
 .text-container {
     position: absolute;
-    top: 3px;
     color: rgb(255, 255, 255);
-    background-color: rgb(41, 41, 41, 0.8);
-    padding-right: 10px;
+    background-color: rgba(41, 41, 41, 0.8);
 }
+
 .text-container2 {
     position: absolute;
     color: rgb(255, 255, 255);
-    padding-left: 50px;
-    padding-right: 50px;
-    left: 47%;
-    top: 12%;
     background-color: rgb(41, 41, 41, 0.8);
-    font-size: 20;
 }
+
 .text-container3 {
     position: relative;
     color: rgb(255, 255, 255);
@@ -200,61 +364,61 @@ div {
     padding-right: 50px;
     background-color: rgb(41, 41, 41, 0.8);
     font-size: 20;
-    top: 14%;
 }
-.text-container4{
+
+.text-container4 {
     position: absolute;
     top: 3px;
     color: rgb(255, 255, 255);
     padding-right: 10px;
 }
-.project-container{
+
+.project-container {
     position: relative;
-    font-size: 20;
-    margin-top: 2%;
+    font-size: 20px; /* Add units (px) for font size */
     color: rgb(255, 255, 255);
-    padding-left: 50px;
-    padding-right: 50px;
-    background-color: rgb(41, 41, 41, 0.8);
+    background-color: #111;
+    padding: 0 20px; /* Add padding for space on the left and right inside the container */
+    border-radius: 15px; /* Rounded corners */
+    margin: 0 20px; /* Add margin to create space between container and screen edges */
     padding-bottom: 10px;
-    border: 3px solid orange;
-    
+    margin-bottom: 20px;
 }
-.project-container2{
-    position:relative;
-    font-size: 20;
-    margin-top: 2%;
-    color: rgb(255, 255, 255);
-    padding-left: 50px;
-    padding-right: 50px;
-    background-color: rgb(41, 41, 41, 0.8);
-    padding-bottom: 10px;
-    border: 3px solid orange;
-}
+
+
 .thing-container {
     position: relative;
-    height: 52.8%;
+    top:3%;
+    left: 0;
+    right: 0;
     color: rgb(255, 255, 255);
-    padding-bottom: 20px;
-    padding-left: 40px;
-    padding-right: 10px;
-    margin-top: 0%;
-    background-color: rgb(41, 41, 41, 0.8);
-    font-size: 24;
-    border: 3px solid orange;
+    padding: 1.5% 1.5% 3%;
+    background-color: rgba(41, 41, 41, 0.8);
+    font-size: 1vw;
+    border: 0.2vw solid orange;
 }
+
 .thing-container2 {
     position: relative;
     color: rgb(255, 255, 255);
-    padding-bottom: 20px;
-    padding-left: 40px;
-    padding-right: 10px;
-    margin-top: 0%;
-    background-color: rgb(41, 41, 41, 0.8);
-    font-size: 24;
-    border: 3px solid orange;
+    padding: 1.5% 1.5% 3%;
+    background-color: rgba(41, 41, 41, 0.8);
+    font-size: 1vw;
+    border: 0.2vw solid orange;
 }
-.contact-container{
+.weather-container {
+    position: relative;
+    top:3%;
+    left: 0;
+    right: 0;
+    color: rgb(255, 255, 255);
+    padding: 1.5% 1.5% 3%;
+    background-color: rgba(41, 41, 41, 0.8);
+    font-size: 1vw;
+    border: 0.2vw solid orange;
+}
+
+.contact-container {
     position: absolute;
     padding-top: 70px;
     padding-bottom: 20px;
@@ -264,13 +428,9 @@ div {
     background-color: rgb(41, 41, 41, 0.8);
     font-size: 24;
 }
-.link-container{
-    position: absolute;
-    top: 20%;
-    left: 44%;
-    border: 3px solid orange;
-}
-.link-container2{
+
+
+.link-container2 {
     position: absolute;
     margin-top: 10px;
     padding-top: 0px;
@@ -279,19 +439,22 @@ div {
     left: 45%;
     font-size: 24;
 }
-th{
+
+th {
     text-align: left;
     font-size: 24;
-    color:white;
+    color: white;
 }
-td{
+
+td {
     padding-left: 100px;
     font-size: 24;
-    color:white;
+    color: white;
 }
+
 .sidenav {
     height: 100%;
-    width: 0;
+    width: 270px; /* Increase the width */
     position: fixed;
     z-index: 1;
     top: 0;
@@ -300,35 +463,42 @@ td{
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
-  }
-  
-  .sidenav a {
+}
+
+.sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
     color: #818181;
     display: block;
     transition: 0.3s;
+    width: 250px;
   }
-  
-  .sidenav a:hover {
+
+.sidenav a:hover {
     color: #f1f1f1;
-  }
-  
-  .sidenav .closebtn {
+}
+
+.sidenav .closebtn {
+    color: white;
     position: absolute;
     top: 0;
-    right: 25px;
+    left:180; /* Adjust the right value as needed */
     font-size: 36px;
-    margin-left: 50px;
-  }
-  
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
-  #mySidenav {
-    z-index: 2; 
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+#mySidenav {
+    z-index: 2;
     position: fixed;
     top: 0;
     left: 0;
@@ -337,77 +507,57 @@ td{
     background-color: #111;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
+    padding-top: 10px;
 }
-#img1  {
-    border: 3px solid orange;
-    position: absolute;
-    top:110;
-    left: 4.5%;
-}
-#img2  {
-    border: 3px solid orange;
-    position: absolute;
-    top: 110px;
-    margin-left: 37%;
-}
-#img3  {
-    border: 3px solid orange;
-    position: absolute;
-    top: 110px;
-    margin-left: 69.5%;
-}
-#img4  {
-    border: 3px solid orange;
-    position: absolute;
-    top: 540px;
-    left: 4.5%;
-}
-#img5  {
-    border: 3px solid orange;
-    position: absolute;
-    top: 540px;
-    margin-left: 37%;
-}
-#img6  {
-    border: 3px solid orange;
-    position: absolute;
-    top: 540px;
-    margin-left: 69.5%;
-}
-#myImg {
-    border-radius: 5px;
-    border: 3px solid orange;
-    cursor: pointer;
-    transition: 0.3s;
+
+.image-container {
+    display: flex;
+    flex-direction: column; /* Stack images in a column */
+    align-items: center; /* Center the images */
+    gap: 20px; /* Add space between the images */
+    margin: 20px 0; /* Add margin on top and bottom */
+  }
+  
+  /* Individual image item */
+  .image-item {
+    position: relative; /* Relative positioning for the modal */
+    display: inline-block; /* Treat each image as a block */
+  }
+  
+  /* Common styling for the images */
+  .myImg {
+    width: 100%;
+    max-width: 500px;
+    cursor: pointer; /* Indicate the image is clickable */
   }
 
-#myImg:hover {opacity: 0.7;}
 
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  .modal {
+    display: none; /* Hide the modal by default */
+    position: fixed;
+    z-index: 1000; /* Ensure it's above other elements like the top-nav-bar */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Slightly transparent black background */
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    box-sizing: border-box;
+    overflow: auto;
+    padding-top: 10%; /* Add some padding for spacing */
 }
-
-/* Modal Content (image) */
 .modal-content {
     margin: auto;
     display: block;
-    width: 80%;
-    max-width: 700px;
+    width: auto; /* Allow width to adjust dynamically */
+    max-width: 80%; /* Ensure the image doesn’t exceed 80% of the viewport width */
+    max-height: 80vh; /* Limit the image height to 80% of the viewport height */
+    position: relative;
+    z-index: 1001; /* Ensure modal image content is above everything else */
+    object-fit: contain; /* Ensures the image scales proportionally */
 }
 
-/* Caption of Modal Image */
 .caption {
     margin: auto;
     display: block;
@@ -416,58 +566,53 @@ td{
     text-align: center;
     color: #ccc;
     padding: 10px 0;
-    height: 150px;
-  }
-
-/* Add Animation */
-.modal-content, #caption {  
-  -webkit-animation-name: zoom;
-  -webkit-animation-duration: 0.6s;
-  animation-name: zoom;
-  animation-duration: 0.6s;
+    height: auto;
 }
 
-@-webkit-keyframes zoom {
-  from {-webkit-transform:scale(0)} 
-  to {-webkit-transform:scale(1)}
+.modal-content,
+.caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
 }
 
+/* Zoom animation */
 @keyframes zoom {
-  from {transform:scale(0)} 
-  to {transform:scale(1)}
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
 }
 
-/* The Close Button */
 .close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
+    position: absolute;
+    top: 15px;
+    right: 15px; 
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 1002; /* Ensure close button stays above the modal */
 }
 
 .close:hover,
 .close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
+    color: orange;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+    cursor: pointer;
 }
 
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-  .modal-content {
-    width: 100%;
-  }
-}
-.prev, .next {
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
     top: 50%;
     width: auto;
     padding: 16px;
-    margin-top: -22px;
     color: white;
     font-weight: bold;
     font-size: 24px;
@@ -475,21 +620,31 @@ td{
     border: none;
     background: none;
     outline: none;
-  }
-  
-  .prev:hover, .next:hover {
+    z-index: 1001; /* Ensure navigation arrows stay above the modal */
+}
+
+.prev:hover,
+.next:hover {
     background-color: rgba(0, 0, 0, 0.5);
     color: orange;
-  }
-  
-  .prev {
+}
+
+.prev {
     left: 0;
-  }
-  
-  .next {
+}
+
+.next {
     right: 0;
-  }
-  .container {
-    position: relative;
-    margin-top:100px;
-  }
+}
+
+
+@media (min-width: 600px) and (max-width: 1195px) {
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+        position: relative;
+        z-index: 1001; /* Ensure modal image content is above everything else */
+    }
+}

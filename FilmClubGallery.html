@@ -1,0 +1,63 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <title>Film Club Image Galley</title>
+</head>
+
+<body>
+  <div class="FP-top-nav">
+    <a href="FrontPage.html">Home</a>
+    <a href="assets/cv/julius-pohjanen-cv.pdf" download class="cv-download-link">Download My CV</a>
+    <a href="/Projects.html">Project List</a>
+    <a href="/Aboutme.html">About Me</a>
+    <a href="/Contact_info.html">Get in Touch</a>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/julius-pohjanen-ab717633a/" target="_blank">
+        <img src="assets/pictures/linkedin.png" alt="linkedin" class="social-icon">
+      </a>
+      <a href="https://github.com/JuliusPohjanen" target="_blank">
+        <img src="assets/pictures/github.png" alt="github" class="social-icon">
+      </a>
+      <a href="https://www.instagram.com/juliuspohjanen/" target="_blank">
+        <img src="assets/pictures/instagram.png" alt="instagram" class="social-icon">
+      </a>
+    </div>
+  </div>
+
+  <div class="image-container">
+    <div class="image-item">
+      <img class="myImg" src="assets/pictures/homepage.png" alt="Film club homepage"width:100%; max-width:500px;">
+      <div class="myModal modal">
+        <span class="close">&times;</span>
+        <button class="prev" onclick="navigateImages(-1)">&#10094;</button>
+        <img class="modal-content" src="">
+        <button class="next" onclick="navigateImages(1)">&#10095;</button>
+        <div class="caption"></div>
+      </div>
+    </div>
+  
+    <div class="image-item">
+        <img class="myImg" src="assets/pictures/UI-suunnitelma.png" alt="UI-plan" style="width:100%; max-width:500px;">
+        <div class="myModal modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" src="">
+          <div class="caption"></div>
+        </div>
+      </div>
+
+      <div class="image-item">
+        <img class="myImg" src="assets/pictures/er-graph.png" alt="er-graph" style="width:100%; max-width:500px;">
+        <div class="myModal modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" src="">
+          <div class="caption"></div>
+        </div>
+      </div>
+   
+  </div>
+
+  <script src="assets/scripts/script.js"></script>
+  <script src="assets/scripts/timer_scripts.js"></script>
+</body>
