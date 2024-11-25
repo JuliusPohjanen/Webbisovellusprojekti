@@ -1,0 +1,50 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Info</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+  <div id="topbar"></div>
+
+  <div class="text-container">
+    <!--<div id="blockmenu"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; MENU</span></div>-->
+  </div>
+
+  <img src="assets/pictures/WinterNature.jpg" alt="WinterNature"
+    style="height: 45%; width: 100%; object-fit: cover; object-position: 100% 80%">
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="/FrontPage.html"> Front Page</a>
+    <a href="/CV.html">CV</a>
+    <a href="/portfolio.html">Project List</a>
+    <a href="/Contact_info.html">Contact Info</a>
+    <a href="/Aboutme.html">About Me</a>
+  </div>
+
+  <div id="midbar"></div>
+  <div class="text-container3">
+    <div id="block4">
+      <p><u>Weather in Oulu</u></p>
+    </div>
+  </div>
+  <div id="midbar"></div>
+
+
+  <div class="weather-container">
+    <h1>Weather in Oulu, Finland</h1>
+    <p>Temperature: <span id="temperature"></span> &deg;C</p>
+    <p>Weather: <span id="weather-description"></span></p>
+    <p>----</p>
+    <p id="current-date"></p>
+    <p id="current-time"></p>
+  </div>
+
+  <script src="assets/scripts/date_and_time_script.js"></script>
+  <script src="assets/scripts/Weather_API_script.js"></script>
+  <script src="assets/scripts/script.js"></script>
+  <script src="assets/scripts/timer_scripts.js"></script>
+</body>

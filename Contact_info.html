@@ -1,68 +1,66 @@
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet" type="text/css">
-    <title>Yhteystiedot</title>
+    <title>Contact Info</title>
 </head>
+
 <body>
     <div id="topbar"></div>
-    
-    
-    <div> 
-        <img src="assets/pictures/WinterNature.jpg" alt="WinterNature" style="height: 45%; width: 100%; object-fit: cover; object-position: 100% 80%">
-        <div class="text-container">
-            <div id="blockmenu2"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span></div>
-            <div id="blockname"><h2>Contact info</h2></div>
-          </div>
-          <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="index.html"> Front Page</a>
-            <a href="/CV.html">CV</a>
-            <a href="/portfolio.html" >Portfolio</a>
-            <a href="/Aboutme.html">About me</a>
-          </div>
-          <script>
-            function openNav() {
-              document.getElementById("mySidenav").style.width = "250px";
-            }
-            
-            function closeNav() {
-              document.getElementById("mySidenav").style.width = "0";
-            }
-            </script>
-    <div class="thing-container">
-    <h3>Contact list:</h3>
-    <h3>Julius Pohjanen</h3>
-    <table>
-        <tr>
-            <th>Phone number:</th>
-            <td>0401890460</td>
-        </tr>
-        <tr>
-            <th>School Email:</th>
-            <td>t2poju01@students.oamk.fi</td>
-        </tr>
-        <tr>
-            <th>Personal email:</th>
-            <td>julius.pohjanen@gmail.com</td>
-        </tr>
-        <tr>
-            <th>Post Number:</th>
-            <td>90570</td>
-        </tr>
-        <tr>
-            <th>Postal district:</th>
-            <td>OULU</td>
-        </tr>
-        <tr>
-            <th>Local address:</th>
-            <td>Tuulikintie 6D 225</td>
-        </tr>
-        <tr>
-            <th>Github käyttäjä:</th>
-            <td><a href="https://github.com/JuliusPohjanen" target="_blank">JuliusPohjanen</a></td>
-        </tr>
-    </table>
+
+    <div class="text-container">
+        <div id="blockmenu"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; MENU</span></div>
     </div>
-    
+    <div>
+        <img src="assets/pictures/WinterNature.jpg" alt="WinterNature"
+            style="height: 45%; width: 100%; object-fit: cover; object-position: 100% 80%">
+    </div>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="FrontPage.html"> Front Page</a>
+        <a href="/CV.html">CV</a>
+        <a href="/portfolio.html">Project List</a>
+        <a href="/Aboutme.html">About me</a>
+        <!---<a href="/WeatherInformation.html">Weather Info</a>--->
+    </div>
+
+
+    <div id="midbar"></div>
+    <div class="text-container3">
+        <div id="block4">
+            <p><u>contact list</u></p>
+        </div>
+    </div>
+
+    <div id="midbar"></div>
+
+    <div class="thing-container">
+        <h2>Julius Pohjanen</h2>
+        <table>
+            <tr>
+                <th>Phone number:</th>
+                <td>0401890460</td>
+            </tr>
+            <tr>
+                <th>School Email:</th>
+                <td>t2poju01@students.oamk.fi</td>
+            </tr>
+            <tr>
+                <th>Personal email:</th>
+                <td>julius.pohjanen@gmail.com</td>
+            </tr>
+            <tr>
+                <th>Personal Github:</th>
+                <td><a href="https://github.com/JuliusPohjanen" target="_blank">JuliusPohjanen</a></td>
+            </tr>
+            <tr>
+                <th>School Github:</th>
+                <td><a href="https://github.com/PohjanenJulius" target="_blank">PohjanenJulius</a></td>
+            </tr>
+        </table>
+    </div>
+    <script src="assets/scripts/script.js"></script>
+    <script src="assets/scripts/timer_scripts.js"></script>
 </body>
